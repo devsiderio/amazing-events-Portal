@@ -14,6 +14,10 @@
   background-size: cover;
 }
 
+.card small {
+  font-weight: 800;
+}
+
 .details-img {
   box-shadow: -6px -7px 26px 1px #d91e68;
   -webkit-box-shadow: -6px -7px 26px 1px #d91e68;
