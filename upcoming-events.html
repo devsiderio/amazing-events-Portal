@@ -61,37 +61,47 @@
       </div>
 
       <div class="d-flex my-5 gap-5 justify-content-center">
-        <div class="d-flex gap-5 justify-content-center">
-          <div class="mx-0 w-auto">
-            <label class="list-group-item d-flex gap-2">
-              <input
-                class="form-check-input flex-shrink-0"
-                type="checkbox"
-                value=""
-                checked=""
-              />
-              <span> First Category </span>
+        <div class="gap-5 justify-content-center">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radio-events"
+              id="radio-all-events"
+              onclick="window.location.href='./index.html';"
+            />
+            <label class="form-check-label" for="radio-all-events">
+              All events
             </label>
-            <label class="list-group-item d-flex gap-2">
-              <input
-                class="form-check-input flex-shrink-0"
-                type="checkbox"
-                value=""
-              />
-              <span> Second Category </span>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radio-events"
+              id="radio-upcoming-events"
+              onclick="window.location.href='./upcoming-events.html';"
+              checked
+            />
+            <label class="form-check-label" for="radio-upcoming-events">
+              Upcoming Events
             </label>
-            <label class="list-group-item d-flex gap-2">
-              <input
-                class="form-check-input flex-shrink-0"
-                type="checkbox"
-                value=""
-              />
-              <span> Third Category </span>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radio-events"
+              id="radio-past-events"
+              onclick="window.location.href='./past-events.html';"
+            />
+            <label class="form-check-label" for="radio-past-events">
+              Past Events
             </label>
           </div>
         </div>
 
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar">
           <div class="container-fluid">
             <form class="d-flex" role="search">
               <input
@@ -119,216 +129,10 @@
         </nav>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-4 m-5 text-center">
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-body">
-              <div class="col">
-                <div
-                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                  style="
-                    background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-2.jpg');
-                  "
-                >
-                  <div
-                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-                  >
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Title</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img
-                          src="./assets/images/favicon-AmazingEvents.ico"
-                          alt="Amazing Events"
-                          width="32"
-                          height="32"
-                          class="rounded-circle border border-white"
-                        />
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#geo-fill"></use>
-                        </svg>
-                        <small>Price</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#calendar3"></use>
-                        </svg>
-                        <small>$0000</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <p class="mt-3 mb-4">Descriptive text.</p>
-              <a href="./details-1.html">
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  See more
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-body">
-              <div class="col">
-                <div
-                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                  style="
-                    background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-1.jpg');
-                  "
-                >
-                  <div
-                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-                  >
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Title</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img
-                          src="./assets/images/favicon-AmazingEvents.ico"
-                          alt="Amazing Events"
-                          width="32"
-                          height="32"
-                          class="rounded-circle border border-white"
-                        />
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#geo-fill"></use>
-                        </svg>
-                        <small>Price</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#calendar3"></use>
-                        </svg>
-                        <small>$0000</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <p class="mt-3 mb-4">Descriptive text.</p>
-              <a href="./details-1.html">
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  See more
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-body">
-              <div class="col">
-                <div
-                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                  style="
-                    background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-3.jpg');
-                  "
-                >
-                  <div
-                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-                  >
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Title</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img
-                          src="./assets/images/favicon-AmazingEvents.ico"
-                          alt="Amazing Events"
-                          width="32"
-                          height="32"
-                          class="rounded-circle border border-white"
-                        />
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#geo-fill"></use>
-                        </svg>
-                        <small>Price</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#calendar3"></use>
-                        </svg>
-                        <small>$0000</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <p class="mt-3 mb-4">Descriptive text.</p>
-              <a href="./details-1.html">
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  See more
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-body">
-              <div class="col">
-                <div
-                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                  style="
-                    background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-2.jpg');
-                  "
-                >
-                  <div
-                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-                  >
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Title</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img
-                          src="./assets/images/favicon-AmazingEvents.ico"
-                          alt="Amazing Events"
-                          width="32"
-                          height="32"
-                          class="rounded-circle border border-white"
-                        />
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#geo-fill"></use>
-                        </svg>
-                        <small>Price</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#calendar3"></use>
-                        </svg>
-                        <small>$0000</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <p class="mt-3 mb-4">Descriptive text.</p>
-              <a href="./details-1.html">
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  See more
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 m-5 text-center"
+        id="cardsContainer"
+      ></div>
     </main>
 
     <div class="container">
@@ -385,6 +189,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/source/index.js"></script>
+    <script src="./assets/source/data.js"></script>
+    <script src="./assets/source/upcoming-events.js"></script>
   </body>
 </html>
