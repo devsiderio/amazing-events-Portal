@@ -2,7 +2,7 @@ const cardsContainer = document.getElementById("cardsContainer");
 const currentDate = data.currentDate;
 const dataEvents = data.events;
 
-function createCard(data) {
+function createCard() {
   let card = "";
   for (const event of dataEvents) {
     const dataEventsDate = event.date;
