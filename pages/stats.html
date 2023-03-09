@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon-AmazingEvents.ico"
+      href="../assets/images/favicon-AmazingEvents.ico"
       type="image/x-icon"
     />
     <title>Amazing Events</title>
@@ -16,17 +16,17 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
   </head>
   <body>
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3">
         <a
-          href="./index.html"
+          href="../index.html"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
         >
           <img
-            src="./assets/images/Logo_Amazing_Events.png"
+            src="../assets/images/Logo_Amazing_Events.png"
             alt="Amazing Events Logo"
             width="200"
           />
@@ -34,7 +34,7 @@
 
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">Home</a>
+            <a href="../index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a href="./upcoming-events.html" class="nav-link"
@@ -48,60 +48,112 @@
             <a href="./contact.html" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="./stats.html" class="nav-link">Stats</a>
+            <a href="#" class="nav-link active" aria-current="page">Stats</a>
           </li>
         </ul>
       </header>
     </div>
     <main>
-      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-md-10 mx-auto col-lg-5">
-            <div class="col details-img">
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark shadow-lg"
-                style="
-                  background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-2.jpg');
-                "
-              >
-                <div
-                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-                >
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Title</h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                      <img
-                        src="./assets/images/favicon-AmazingEvents.ico"
-                        alt="Amazing Events"
-                        width="32"
-                        height="32"
-                        class="rounded-circle border border-white"
-                      />
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#geo-fill"></use>
-                      </svg>
-                      <small>Price</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#calendar3"></use>
-                      </svg>
-                      <small>$0000</small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-10 mx-auto col-lg-5 border rounded-3">
-            <h2 class="mt-4">Title</h2>
-            <p class="mt-3 mb-4">Descriptive text.</p>
-            <p class="mt-3 mb-4">Descriptive text.</p>
-            <p class="mt-3 mb-4">Descriptive text.</p>
-          </div>
+      <div class="bg-dark text-secondary px-4 py-1 text-center">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">Stats</h1>
         </div>
+      </div>
+
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="border rounded-3 pt-3 px-3 p-1 bg-primary text-white">
+          <h4>Events statistics</h4>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">
+                Event with the highest percentage of attendance
+              </th>
+              <th scope="col">
+                Event with the lowest percentage of attendance
+              </th>
+              <th scope="col">Event with larger capacity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.</td>
+              <td>.</td>
+              <td>.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="border rounded-3 pt-3 px-3 p-1 bg-primary text-white">
+          <h4>Upcoming events statistics by category</h4>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Categories</th>
+              <th scope="col">Revenues</th>
+              <th scope="col">Percentage of attendance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.</td>
+              <td>.</td>
+              <td>.</td>
+            </tr>
+            <tr>
+              <td>.</td>
+              <td>.</td>
+              <td>.</td>
+            </tr>
+            <tr>
+              <td>.</td>
+              <td>.</td>
+              <td>.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="border rounded-3 pt-3 px-3 p-1 bg-primary text-white">
+          <h4>Past events statistics by category</h4>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Categories</th>
+              <th scope="col">Revenues</th>
+              <th scope="col">Percentage of attendance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.</td>
+              <td>.</td>
+              <td>.</td>
+            </tr>
+            <tr>
+              <td>.</td>
+              <td>.</td>
+              <td>.</td>
+            </tr>
+            <tr>
+              <td>.</td>
+              <td>.</td>
+              <td>.</td>
+            </tr>
+            <tr>
+              <td>.</td>
+              <td>.</td>
+              <td>.</td>
+            </tr>
+            <tr>
+              <td>.</td>
+              <td>.</td>
+              <td>.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
 
@@ -149,7 +201,7 @@
         </ul>
 
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-muted">Cohort</span>
+          <span class="mb-3 mb-md-0 text-muted">FE-01-TM</span>
         </div>
       </footer>
     </div>
@@ -159,6 +211,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/source/index.js"></script>
+    <script src="../source/index.js"></script>
   </body>
 </html>

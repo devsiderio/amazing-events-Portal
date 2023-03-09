@@ -37,18 +37,18 @@
             <a href="#" class="nav-link active" aria-current="page">Home</a>
           </li>
           <li class="nav-item">
-            <a href="./upcoming-events.html" class="nav-link"
+            <a href="./pages/upcoming-events.html" class="nav-link"
               >Upcoming Events</a
             >
           </li>
           <li class="nav-item">
-            <a href="./past-events.html" class="nav-link">Past Events</a>
+            <a href="./pages/past-events.html" class="nav-link">Past Events</a>
           </li>
           <li class="nav-item">
-            <a href="./contact.html" class="nav-link">Contact</a>
+            <a href="./pages/contact.html" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="./stats.html" class="nav-link">Stats</a>
+            <a href="./pages/stats.html" class="nav-link">Stats</a>
           </li>
         </ul>
       </header>
@@ -62,43 +62,7 @@
 
       <div class="d-flex my-5 gap-5 justify-content-center">
         <div class="gap-5 justify-content-center">
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="radio-events"
-              id="radio-all-events"
-              onclick="window.location.href='./index.html';"
-              checked
-            />
-            <label class="form-check-label" for="radio-all-events">
-              All events
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="radio-events"
-              id="radio-upcoming-events"
-              onclick="window.location.href='./upcoming-events.html';"
-            />
-            <label class="form-check-label" for="radio-upcoming-events">
-              Upcoming Events
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="radio-events"
-              id="radio-past-events"
-              onclick="window.location.href='./past-events.html';"
-            />
-            <label class="form-check-label" for="radio-past-events">
-              Past Events
-            </label>
-          </div>
+          <div class="mx-0 w-auto" id="categories-container"></div>
         </div>
 
         <nav class="navbar">
@@ -109,21 +73,8 @@
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
+                id="search"
               />
-              <button class="btn btn-outline-success" type="submit">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                  />
-                </svg>
-              </button>
             </form>
           </div>
         </nav>
@@ -179,7 +130,7 @@
         </ul>
 
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-muted">Cohort</span>
+          <span class="mb-3 mb-md-0 text-muted">FE-01-TM</span>
         </div>
       </footer>
     </div>

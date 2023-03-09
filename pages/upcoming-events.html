@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon-AmazingEvents.ico"
+      href="../assets/images/favicon-AmazingEvents.ico"
       type="image/x-icon"
     />
     <title>Amazing Events</title>
@@ -16,17 +16,17 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
   </head>
   <body>
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3">
         <a
-          href="./index.html"
+          href="../index.html"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
         >
           <img
-            src="./assets/images/Logo_Amazing_Events.png"
+            src="../assets/images/Logo_Amazing_Events.png"
             alt="Amazing Events Logo"
             width="200"
           />
@@ -34,10 +34,10 @@
 
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="./index.html" class="nav-link">Home</a>
+            <a href="../index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="./upcoming-events.html" class="nav-link"
+            <a href="#" class="nav-link active" aria-current="page"
               >Upcoming Events</a
             >
           </li>
@@ -48,7 +48,7 @@
             <a href="./contact.html" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">Stats</a>
+            <a href="./stats.html" class="nav-link">Stats</a>
           </li>
         </ul>
       </header>
@@ -56,105 +56,34 @@
     <main>
       <div class="bg-dark text-secondary px-4 py-1 text-center">
         <div class="py-5">
-          <h1 class="display-5 fw-bold text-white">Stats</h1>
+          <h1 class="display-5 fw-bold text-white">Upcoming Events</h1>
         </div>
       </div>
 
-      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-        <div class="border rounded-3 pt-3 px-3 p-1 bg-primary text-white">
-          <h4>Events statistics</h4>
+      <div class="d-flex my-5 gap-5 justify-content-center">
+        <div class="gap-5 justify-content-center">
+          <div class="mx-0 w-auto" id="categories-container"></div>
         </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">
-                Event with the highest percentage of attendance
-              </th>
-              <th scope="col">
-                Event with the lowest percentage of attendance
-              </th>
-              <th scope="col">Event with larger capacity</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-          </tbody>
-        </table>
 
-        <div class="border rounded-3 pt-3 px-3 p-1 bg-primary text-white">
-          <h4>Upcoming events statistics by category</h4>
-        </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Categories</th>
-              <th scope="col">Revenues</th>
-              <th scope="col">Percentage of attendance</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="border rounded-3 pt-3 px-3 p-1 bg-primary text-white">
-          <h4>Past events statistics by category</h4>
-        </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Categories</th>
-              <th scope="col">Revenues</th>
-              <th scope="col">Percentage of attendance</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-          </tbody>
-        </table>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search"
+              />
+            </form>
+          </div>
+        </nav>
       </div>
+
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 m-5 text-center"
+        id="cardsContainer"
+      ></div>
     </main>
 
     <div class="container">
@@ -201,7 +130,7 @@
         </ul>
 
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-muted">Cohort</span>
+          <span class="mb-3 mb-md-0 text-muted">FE-01-TM</span>
         </div>
       </footer>
     </div>
@@ -211,6 +140,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/source/index.js"></script>
+    <script src="../assets/source/data.js"></script>
+    <script src="../assets/source/upcoming-events.js"></script>
   </body>
 </html>

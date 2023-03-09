@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon-AmazingEvents.ico"
+      href="../assets/images/favicon-AmazingEvents.ico"
       type="image/x-icon"
     />
     <title>Amazing Events</title>
@@ -16,17 +16,17 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
   </head>
   <body>
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3">
         <a
-          href="./index.html"
+          href="../index.html"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
         >
           <img
-            src="./assets/images/Logo_Amazing_Events.png"
+            src="../assets/images/Logo_Amazing_Events.png"
             alt="Amazing Events Logo"
             width="200"
           />
@@ -34,10 +34,10 @@
 
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="./index.html" class="nav-link">Home</a>
+            <a href="../index.html" class="nav-link" aria-current="page">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page"
+            <a href="./upcoming-events.html" class="nav-link"
               >Upcoming Events</a
             >
           </li>
@@ -56,83 +56,11 @@
     <main>
       <div class="bg-dark text-secondary px-4 py-1 text-center">
         <div class="py-5">
-          <h1 class="display-5 fw-bold text-white">Upcoming Events</h1>
+          <h1 class="display-5 fw-bold text-white">Details</h1>
         </div>
       </div>
-
-      <div class="d-flex my-5 gap-5 justify-content-center">
-        <div class="gap-5 justify-content-center">
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="radio-events"
-              id="radio-all-events"
-              onclick="window.location.href='./index.html';"
-            />
-            <label class="form-check-label" for="radio-all-events">
-              All events
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="radio-events"
-              id="radio-upcoming-events"
-              onclick="window.location.href='./upcoming-events.html';"
-              checked
-            />
-            <label class="form-check-label" for="radio-upcoming-events">
-              Upcoming Events
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="radio-events"
-              id="radio-past-events"
-              onclick="window.location.href='./past-events.html';"
-            />
-            <label class="form-check-label" for="radio-past-events">
-              Past Events
-            </label>
-          </div>
-        </div>
-
-        <nav class="navbar">
-          <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                  />
-                </svg>
-              </button>
-            </form>
-          </div>
-        </nav>
+      <div class="container" id="details-container" col-xl-10 col-xxl-8 px-4 py-5">
       </div>
-
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 m-5 text-center"
-        id="cardsContainer"
-      ></div>
     </main>
 
     <div class="container">
@@ -179,7 +107,7 @@
         </ul>
 
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-muted">Cohort</span>
+          <span class="mb-3 mb-md-0 text-muted">FE-01-TM</span>
         </div>
       </footer>
     </div>
@@ -189,7 +117,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/source/data.js"></script>
-    <script src="./assets/source/upcoming-events.js"></script>
+    <script src="../assets/source/data.js"></script>
+    <script src="../assets/source/details.js"></script>
   </body>
 </html>

@@ -4,8 +4,23 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-link {
   color: #d91e68;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-around;
 }
 
 .card-img-top {
@@ -29,4 +44,8 @@
   box-shadow: -6px -7px 26px 1px #d91e68;
   -webkit-box-shadow: -6px -7px 26px 1px #d91e68;
   -moz-box-shadow: -6px -7px 26px 1px #d91e68;
+}
+
+.details-items {
+  font-weight: 700;
 }
