@@ -1,3 +1,4 @@
+/* ---------------------------- General ---------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +9,39 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: rgba(var(--bs-warning-rgb), 0.8);
+}
+
+/* ---------------------------- Header ---------------------------- */
 .nav-link {
+  color: var(--bs-primary);
+}
+
+.nav-link:hover {
   color: #d91e68;
 }
+
+/* ---------------------------- Banner ---------------------------- */
+
+.banner {
+  background-color: #d91e68;
+}
+
+/* ---------------------------- Cards ---------------------------- */
 
 .card {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  background-color: #d91e68;
+  color: white;
+}
+
+.card:hover {
+  background-color: white;
+  color: #d91e68;
+  transition: 0.5s;
 }
 
 .card-bottom {
@@ -40,6 +66,57 @@ html {
   background-size: cover;
 }
 
+.upcomingCards {
+  background-color: rgba(var(--bs-primary-rgb), 0.8);
+}
+
+.upcomingCards h6 {
+  color: white;
+}
+
+.pastCards {
+  background-color: white;
+  color: var(--bs-primary);
+}
+
+.pastCards h6 {
+  color: var(--bs-primary);
+}
+
+/* ---------------------------- Details ---------------------------- */
+
+.detailsCards {
+  background-color: white;
+  color: #d91e68;
+}
+
+.detailsCards:hover {
+  background-color: #d91e68;
+  color: white;
+  transition: 1s;
+}
+
+.detailsTextCard {
+  background-color: #d91e68;
+  color: white;
+}
+
+.detailsTextCard:hover {
+  background-color: white;
+  color: #d91e68;
+  transition: 1s;
+}
+
+.detailsCards h2 {
+  font-size: 3rem;
+  -webkit-text-stroke: 1px white;
+}
+
+.detailsCards > .card-header {
+  background-color: #d91e68;
+  color: var(--bs-primary);
+}
+
 .details-img {
   box-shadow: -6px -7px 26px 1px #d91e68;
   -webkit-box-shadow: -6px -7px 26px 1px #d91e68;
@@ -48,4 +125,41 @@ html {
 
 .details-items {
   font-weight: 700;
+}
+
+/* ---------------------------- Contact ---------------------------- */
+
+.contact-form {
+  background-color: #d91e68;
+}
+
+.form-label {
+  color: white;
+}
+
+/* ---------------------------- Stats ---------------------------- */
+
+.ths {
+  background-color: #d91e68;
+  color: white;
+  font-weight: 900;
+}
+
+th:hover {
+  background-color: var(--bs-primary);
+  transition: 0.5s;
+}
+
+td {
+  width: 1rem;
+}
+
+tr:hover {
+  background-color: #d91e68;
+  color: white;
+  transition: 0.5s;
+}
+
+hr {
+  color: black;
 }

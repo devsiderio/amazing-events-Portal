@@ -1,35 +1,55 @@
-let detailsContainer = document.getElementById("details-container");
+let urlApi = "https://mindhub-xj03.onrender.com/api/amazing";
 
-// createDetailsCard
-function createDetailsCard(event) {
-  let queryString = location.search;
-  let params = new URLSearchParams(queryString);
-  const id = params.get("id");
-  const details = event.find((d) => d._id == id);
+async function bringData() {
+  try {
+    const response = await fetch(urlApi);
+    const data = await response.json();
 
-  // (estimate) assistance
-  let result_est_ass = [];
-  result_est_ass = calculate();
+    // currentDate and events
+    const currentDate = data.currentDate;
+    const events = data.events;
 
-  function calculate() {
-    let result = [];
-    result[0] = details.assistance;
+    // categoriesFilter
+    const categoriesFilter = events.map((events) => events.category);
+    const category = categoriesFilter.reduce((c, e) => {
+      if (!c.includes(e)) {
+        c.push(e);
+      }
+      return c;
+    }, []);
 
-    if (result[0] == undefined) {
-      result[0] = details.estimate;
-      result[1] = " estimate.";
-    }
-    return result;
-  }
+    let detailsContainer = document.getElementById("details-container");
 
-  // render card
-  let card = `
+    // createDetailsCard
+    function createDetailsCard(event) {
+      let queryString = location.search;
+      let params = new URLSearchParams(queryString);
+      const id = params.get("id");
+      const details = event.find((d) => d._id == id);
+
+      // (estimate) assistance
+      let result_est_ass = [];
+      result_est_ass = calculate();
+
+      function calculate() {
+        let result = [];
+        result[0] = details.assistance;
+
+        if (result[0] == undefined) {
+          result[0] = details.estimate;
+          result[1] = " estimate.";
+        }
+        return result;
+      }
+
+      // render card
+      let card = `
     <div class="row align-items-center g-lg-5 py-5">
     <div class="col-md-10 mx-auto col-lg-5">
       <div class="col">
-        <div class="card mb-2 rounded-3 shadow-sm">
-          <div class="card-header py-3 text-bg-success">
-            <h6 class="my-0 fw-normal text-center"><span class="details-items">${details.category}</span></h4>
+        <div class="card mb-2 rounded-3 shadow-sm detailsCards">
+          <div class="card-header py-3">
+            <h2 class="my-0 fw-normal text-center"><span class="details-items">${details.name}</span></h4>
           </div>
           <div class="card-body">
           <img src="${details.image}" class="card-img-top rounded-3" alt="${details.name}">
@@ -38,14 +58,14 @@ function createDetailsCard(event) {
         </div>
       </div>
     </div>
-    <div class="col-md-10 mx-auto col-lg-5 border rounded-3">
-      <h2 class="mt-4">${details.name}</h2>
-      <p class="mt-3 mb-4">${details.description}</p>
+    <div class="col-md-10 mx-auto col-lg-5 border rounded-3 detailsCards detailsTextCard">
+      <h3 class="my-4 fw-normal text-center">${details.description}</h2>
+      <p class="mt-1 mb-1"><span class="details-items">Category: </span>${details.category}</p>
       <p class="mt-1 mb-1"><span class="details-items">Date: </span>${details.date}</p>
       <p class="mt-1 mb-1"><span class="details-items">Place: </span>${details.place}</p>
       <p class="mt-1 mb-1"><span class="details-items">Capacity: </span>${details.capacity}</p>
       <p class="mt-1 mb-1"><span class="details-items">Assistance: </span>${result_est_ass}</p>
-      <p class="mt-3 mb-1"><span class="details-items">Price: </span>$${details.price}</p>
+      <p class="mt-1 mb-4"><span class="details-items">Price: </span>$${details.price}</p>
     </div>
     <button
       type="button"
@@ -56,7 +76,13 @@ function createDetailsCard(event) {
     </button>
   </div>`;
 
-  return card;
+      return card;
+    }
+
+    detailsContainer.innerHTML = createDetailsCard(events);
+  } catch {
+    (error) => console.log(error);
+  }
 }
 
-detailsContainer.innerHTML = createDetailsCard(events);
+bringData();

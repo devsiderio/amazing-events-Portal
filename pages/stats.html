@@ -54,7 +54,7 @@
       </header>
     </div>
     <main>
-      <div class="bg-dark text-secondary px-4 py-1 text-center">
+      <div class="banner text-secondary px-4 py-1 text-center">
         <div class="py-5">
           <h1 class="display-5 fw-bold text-white">Stats</h1>
         </div>
@@ -66,93 +66,45 @@
         </div>
         <table class="table">
           <thead>
-            <tr>
+            <tr class="ths">
               <th scope="col">
-                Event with the highest percentage of attendance
+                Events with the highest percentage of attendance
               </th>
               <th scope="col">
-                Event with the lowest percentage of attendance
+                Events with the lowest percentage of attendance
               </th>
-              <th scope="col">Event with larger capacity</th>
+              <th scope="col">Events with larger capacity</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-          </tbody>
+          <tbody id="table1TopEvents"></tbody>
         </table>
 
         <div class="border rounded-3 pt-3 px-3 p-1 bg-primary text-white">
-          <h4>Upcoming events statistics by category</h4>
+          <h4>Upcoming events estimate statistics</h4>
         </div>
         <table class="table">
           <thead>
-            <tr>
+            <tr class="ths">
+              <th scope="col">Categories</th>
+              <th scope="col">Estimate revenues</th>
+              <th scope="col">Percentage of estimate attendance</th>
+            </tr>
+          </thead>
+          <tbody id="table2UpcomingEvents" s></tbody>
+        </table>
+
+        <div class="border rounded-3 pt-3 px-3 p-1 bg-primary text-white">
+          <h4>Past events statistics</h4>
+        </div>
+        <table class="table">
+          <thead>
+            <tr class="ths">
               <th scope="col">Categories</th>
               <th scope="col">Revenues</th>
               <th scope="col">Percentage of attendance</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="border rounded-3 pt-3 px-3 p-1 bg-primary text-white">
-          <h4>Past events statistics by category</h4>
-        </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Categories</th>
-              <th scope="col">Revenues</th>
-              <th scope="col">Percentage of attendance</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-            <tr>
-              <td>.</td>
-              <td>.</td>
-              <td>.</td>
-            </tr>
-          </tbody>
+          <tbody id="table3PastEvents"></tbody>
         </table>
       </div>
     </main>
@@ -211,6 +163,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="../source/index.js"></script>
+    <script src="../assets/source/stats.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+/*
 let data = {
   currentDate: "2022-09-01",
   events: [
@@ -468,16 +469,4 @@ let data = {
     },
   ],
 };
-
-// currentDate y dataEvents
-const currentDate = data.currentDate;
-const events = data.events;
-
-// categoriesFilter
-const categoriesFilter = events.map((events) => events.category);
-const category = categoriesFilter.reduce((c, e) => {
-  if (!c.includes(e)) {
-    c.push(e);
-  }
-  return c;
-}, []);
+*/
